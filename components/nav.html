@@ -37,22 +37,22 @@
   <div class="header pc_none phone_block">
     <div class="width gWidth">
       <h1 class="logo fl"><img src="../static/images/logo@2x.png" alt=""></h1>
-      <div class="menu fr">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <!-- <ul class="nav_list fr">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="about.html">关于宇昊</a></li>
-        <li><a href="team.html">专业团队</a></li>
-        <li><a href="#">专业领域</a></li>
-        <li><a href="dynamic.html">宇昊动态</a></li>
-        <li><a href="recruit.html">招贤纳士</a></li>
-        <li><a href="contact.html">联系我们</a></li>
-      </ul> -->
     </div>
   </div>
+  <div class="menu pc_none phone_block">
+    <span class="s1"></span>
+    <span class="s2"></span>
+    <span class="s3"></span>
+  </div>
+  <ul class="nav_list pc_none phone_block">
+    <li><a target="_parent" href="../pages/index.html">首页</a></li>
+    <li><a target="_parent" href="../pages/about.html">关于宇昊</a></li>
+    <li><a target="_parent" href="../pages/team.html">专业团队</a></li>
+    <li><a target="_parent" href="../pages/field.html">专业领域</a></li>
+    <li><a target="_parent" href="../pages/dynamic.html">宇昊动态</a></li>
+    <li><a target="_parent" href="../pages/recruit.html">招贤纳士</a></li>
+    <li><a target="_parent" href="../pages/contact.html">联系我们</a></li>
+  </ul>
   <!-- banner图 -->
   <div class="banner">
     <img class="banner_img pc_block phone_none" src="../static/images/banner1.png" alt="">
@@ -66,11 +66,23 @@
   <script src="../common/js/jquery.min.js"></script>
   <script type="text/javascript">
     $(function () {
-      $(".nav_list  li a").each(function () {
-        $(this).click(function () {
-          $(".nav_list  li a").removeClass("active");
-          $(this).addClass("active");
-        });
+      var isShow = true;
+      $('.menu').click(function () {
+        if (isShow == true) {
+           isShow = false;
+          $('.nav_list').css('transform', 'translateY(0)');
+          $('.s1').css('transform', 'translateY(0.35rem) rotateZ(45deg)');
+          $('.s2').css('transform', 'rotateZ(-45deg) translateX(-0.02rem)');
+          $('.s3').css('opacity', '0');
+          $('.menu span').css('background', '#333');
+        } else {
+           isShow = true;
+          $('.nav_list').css('transform', 'translateY(-200vw)');
+          $('.s1').css('transform', 'translateY(0) rotateZ(0)');
+          $('.s2').css('transform', 'rotateZ(0) translateX(0)');
+          $('.s3').css('opacity', '1');
+          $('.menu span').css('background', '#FFF');
+        }
       });
     });
   </script>

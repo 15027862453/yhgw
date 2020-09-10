@@ -178,6 +178,11 @@
     </div>
     <!-- 底部 -->
     <iframe class="bottom" scrolling="no" src="../components/foot.html" frameborder="0"></iframe>
+    <div class="top" id="gotoTop" style="width:60px;height:60px;background:rgba(0, 0, 0, .3);position: fixed;right: 0;bottom: 30%;
+    font-size: 18px; color: #FFF; text-align: center; cursor: pointer;border-radius: 4px;z-index: 999;">
+      <img style="width:30px;height:30px;margin-top: 5px;" src="../static/images/top.png" alt="">
+      TOP
+    </div>
   </div>
   <script src="../common/js/jquery.min.js"></script>
   <script src="../common/js/swiper.min.js"></script>
@@ -206,11 +211,38 @@
         var s = $(window).scrollTop();
         var height = $('.process').offset().top - $('.process').height();
         if (s > height) {
-          $('.process_list p,img').css("transform",'translateX(0)');
-          $('.process_bottom li').css("transform",'translateX(0)');
+          $('.process_list p,img').css("transform", 'translateX(0)');
+          $('.process_bottom li').css("transform", 'translateX(0)');
         }
       });
     });
+
+    function gotoTop(minHeight) {
+
+      // 定义点击返回顶部图标后向上滚动的动画
+      $("#gotoTop").click(
+        function () {
+          $('html,body').animate({ scrollTop: '0px' }, 'slow');
+        })
+
+      // 获取页面的最小高度，无传入值则默认为600像素
+      minHeight ? minHeight = minHeight : minHeight = 600;
+
+      // 为窗口的scroll事件绑定处理函数
+      $(window).scroll(function () {
+
+        // 获取窗口的滚动条的垂直滚动距离
+        var s = $(window).scrollTop();
+
+        // 当窗口的滚动条的垂直距离大于页面的最小高度时，让返回顶部图标渐现，否则渐隐
+        if (s > minHeight) {
+          $("#gotoTop").fadeIn(500);
+        } else {
+          $("#gotoTop").fadeOut(500);
+        };
+      });
+    };
+    gotoTop();
   </script>
 </body>
 

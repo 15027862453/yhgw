@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* 标题 */
+.dynamic_title{ 
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+  margin: 1.75rem 0 0.75rem;
+}
+/* 轮播图 */
+.box{
+  width: 100%;
+  height: 18.825rem;
+  position: relative;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.box .img{
+  width: 100%;
+  height: 9.125rem;
+  overflow: hidden;
+  position: relative;
+}
+.box .img .list{
+  width: 700%;
+  height: 100%;
+  position: absolute;
+  left: 0;top: 0;
+  transition: .35s linear;
+}
+.box .img .list li{
+  position: relative;
+  width: 17.5rem;
+  height: 9.25rem;
+  float: left;
+}
+.box .img .list li img{
+  width: 100%;
+  height: 100%;
+}
+.box .img .list li p{
+  position: absolute;
+  left: 0;bottom: 0;
+  width: 82%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  background: rgba(0,0, 0, .7);
+  color: #FFF;
+  font-size: 0.5rem;
+  padding-left: 0.7rem;
+  box-sizing: border-box;
+}
+.box .img .list li p a{
+  float: right;
+  width: 1.8rem;
+  height: 0.65rem;
+  line-height: 0.65rem;
+  text-align: center;
+  background: #DE0000;
+  border-radius: 0.325rem;
+  font-size: 0.35rem;
+  color: #FFFFFF;
+  margin-right: 0.375rem;
+  margin-top: 0.225rem;
+}
+
+.box .block{
+  width: 100%;
+}
+.box .block li{
+  width: 100%;
+  height: 1.85rem;
+  line-height: 1.85rem;
+  background: #DE0000;
+  color: #FFF;
+  font-size: 0.4rem;
+}
+.box .block li p{
+  width: 100%;
+  height: 1.85rem;
+  font-size: 0.6rem;
+  padding: 0 5%;
+  box-sizing: border-box;
+  white-space: nowrap;
+    /*内容超宽后禁止换行显示*/
+  overflow: hidden;
+      /*超出部分隐藏*/
+  text-overflow: ellipsis;
+}
+.box .block .active{   
+  background: #C50000;
+}
+/* 新闻列表 */
+.new_list{
+  width: 100%;
+  padding:  0 5%;
+  box-sizing: border-box;
+  margin-bottom: 3.25rem;
+}
+.new_list li{
+  height: 5.4rem;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+.new_list .time{
+  width: 4.55rem;
+  height: 1.375rem;
+  line-height: 1.375rem;
+  background: #E10000;
+}
+.time .day{
+  float: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0 0.375rem;
+}
+.time .years{
+  float: left;
+  font-size: 0.6rem;
+  color: #FFFFFF;
+}
+.new_list .new_title{
+  width: 100%;
+}
+.new_list .new_title h2{
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #333333;
+  margin: 0.5rem 0;
+  white-space: nowrap;
+      /*内容超宽后禁止换行显示*/
+  overflow: hidden;
+      /*超出部分隐藏*/
+  text-overflow: ellipsis;
+}
+.new_list .describe{
+  float: left;
+}
+.new_list .describe p{
+  font-size: 0.5rem;
+  color: #999999;
+  line-height: 0.9rem;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}

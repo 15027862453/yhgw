@@ -1,0 +1,146 @@
+@charset "utf-8";
+.pc_block{
+  display:block;
+}
+.pc_none{
+  display: none;
+}
+/* 头部 */
+.header{
+  position: absolute;
+  left: 0;top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 90px;
+  line-height:90px;
+  border-bottom: 1px solid  rgba(255, 255, 255, .2);
+}
+.header .logo{
+  width: 364px;
+  height: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.header .logo img{
+  width: 100%;
+  height: 100%;
+}
+.header .nav_list li{
+  float: left;
+  text-align: center;
+  user-select: none;
+}
+.header .nav_list li a{
+  display: inline-block;
+  height: 65px;
+  font-size:16px;
+  color: #FFF;
+  margin-left: 45px;
+}
+.header .nav_list li a:hover{
+  border-bottom: 2px solid #fff;
+}
+/* banner图 */
+.banner{
+  position: relative;
+  left: 0;top: 0;
+  width: 3000px;
+  min-width: 992px;
+  max-width: 100%;
+  height: 803px;
+  margin: 0 auto;
+}
+.banner .banner_img{
+  width:100%;
+  height:100%;
+}
+.icon{
+  position: absolute;
+  left: 0;bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.icon .icon_img{
+  width: 26px;
+  height: 36px;
+}
+.icon .icon_text{
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+/* 底部 */
+.foot_top{
+  position: relative;
+  width: 2000px;
+  max-width: 100%;
+  min-width: 100%;
+  background: #1A1A28;
+  text-align: center;
+  padding-top: 22px;
+  box-sizing: border-box;
+}
+.foot_top .code{
+  position: absolute;
+  top: -42px;
+  right: 120px;
+  text-align: center;
+}
+.foot_top .code img{
+  width: 161px;
+  height: 161px;
+}
+.foot_top .code p{
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-top: 7px;
+}
+.foot_top .logo{
+  width: 225px;
+  height: 50px;
+  margin:0  auto ;
+}
+.foot_top .logo img{
+  width: 100%;height: 100%;
+}
+.foot_top .foot_nav{
+  text-align: center;
+}
+.foot_top .foot_nav li{
+  display: inline;
+  margin-right: 44px;
+}
+.foot_top .foot_nav li:nth-last-child(1){
+  margin-right: 0;
+}
+.foot_top .foot_nav li a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.foot_top .hot_link{
+  padding-bottom: 15px;
+}
+.foot_top .hot_link a{
+  display: inline-block;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.foot_bottom{
+  width: 2000px;
+  max-width: 100%;
+  min-width: 100%;
+  height: 60px;
+  background: #0D0D12;
+  text-align: center;
+  overflow: hidden;
+}
+.foot_bottom p{
+  width: 496px;
+  height: 32px;
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 18px;
+  margin: 16px auto 0;
+}

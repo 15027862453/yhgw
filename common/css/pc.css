@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 头部 */
+.pc_block{
+  display:block;
+}
+.pc_none{
+  display: none;
+}
+.top{
+  width: 100%;
+  height: 803px;margin-bottom:-15px
+}
+.bottom{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 320px;
+}

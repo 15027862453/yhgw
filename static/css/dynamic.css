@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* 标题 */
+.dynamic_title{ 
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 55px;
+}
+/* 轮播图 */
+.box{
+  width: 1200px;
+  height: 370px;
+  position: relative;
+  margin: 40px auto 40px;
+}
+.box .img{
+  width: 700px;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+}
+.box .img .list{
+  width: 500%;
+  height: 100%;
+  position: absolute;
+  left: 0;top: 0;
+  transition: .35s linear;
+}
+.box .img .list li{
+  position: relative;
+  width: 700px;
+  height: 370px;
+  float: left;
+}
+.box .img .list li img{
+  width: 100%;
+  height: 100%;
+}
+.box .img .list li p{
+  position: absolute;
+  left: 0;bottom: 0;
+  width: 700px;
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0,0, 0, .7);
+  color: #FFF;
+  font-size: 16px;
+  padding-left: 28px;
+  box-sizing: border-box;
+}
+.box .img .list li p a{
+  float: right;
+  width: 72px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background: #DE0000;
+  border-radius: 13px;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-right: 15px;
+  margin-top: 9px;
+}
+
+.box .block{
+  width: 500px;
+}
+.box .block li{
+  width: 500px;
+  height: 74px;
+  line-height: 74px;
+  background: #DE0000;
+  color: #FFF;
+  font-size: 16px;
+}
+.box .block li p{
+  width: 500px;
+  height: 74px;
+  padding: 0 5%;
+  box-sizing: border-box;
+  white-space: nowrap;
+    /*内容超宽后禁止换行显示*/
+  overflow: hidden;
+      /*超出部分隐藏*/
+  text-overflow: ellipsis;
+}
+.box .block .active{   
+  background: #C50000;
+}
+/* 新闻列表 */
+.new_list{
+  margin-bottom: 130px;
+}
+.new_list li{
+  height: 138px;
+  border-bottom: 1px solid #EAEAEA;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.new_list .time{
+  float: left;
+  width: 66px;
+  height: 78px;
+  background: #E10000;
+  margin-right: 20px;
+  text-align: center;
+}
+.time .day{
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+.time .years{
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.new_list .new_title{
+  overflow: hidden;
+}
+.new_list .new_title h2{
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 36px;
+  margin-top: -5px;
+}
+.new_list .describe{
+  float: left;
+}
+.new_list .describe p{
+  width: 1110px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 24px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}

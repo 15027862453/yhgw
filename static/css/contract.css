@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* 栏目 */
+.column{
+  height: 174px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.column li{ 
+  float: left;
+  width: 120px;
+  height: 44px;
+  margin-right: 60px;
+  margin-top: 1.85rem;
+}
+.column li:nth-last-child(1){
+  margin-right: 0;
+}
+.column li:hover a{
+  color: #FFF;
+  background: #E10000;
+}
+.column li a{
+  float: left;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #E6E6E6;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+.column li .active{ 
+  color: #FFF;
+  background: #E10000;
+}
+/* 合同纠纷 */
+.dispute{
+  width: 100%;
+  height: 463px;
+  background: #E10000;
+  text-align: center;
+  overflow: hidden;
+}
+.dispute_title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 38px 0 17px;
+}
+.dispute_text{
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-bottom: 38px;
+}
+.dispute_list li{
+  float: left;
+  width: 260px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: #BF0A0A;  
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-right: 53px;
+  margin-bottom: 23px;
+}
+.dispute_list li:nth-child(4n){
+  margin-right: 0;
+}
+/* 擅长 */
+.good{
+  width: 100%;
+  height: 560px;
+  background: url(../images/field/bj.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+}
+.good_title{ 
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin: 69px 0 40px;
+}
+.good_list li{
+  position: relative;
+  float: left;
+  width: 180px;
+  height: 140px;
+  margin:0 24px 23px 0;
+}
+.good_list li:nth-child(6n){
+  margin-right: 0;
+}
+.good_list li p{
+  position: absolute;
+  left: 0;top:50%;
+  margin-top: -10px;
+  width: 180px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.good_list li:nth-child(6)  p{
+  margin-top: -20px;
+}
+/* 我们 */
+.we{
+  text-align: center;
+}
+.we_title{
+  width: 100%;
+  height: 132px;
+  background: #E10000;
+  overflow: hidden;
+  margin: 58px 0 49px;
+}
+.we_title h5{ 
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 25px 0 11px;
+}
+.we_title  p{
+  width: 576px;
+  height: 42px;
+  font-size: 18px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 30px;
+  margin:0 auto ;
+}
+.we_list {
+  margin-left: 30px;
+}
+.we_list li{
+  position: relative;
+  float: left;
+  width: 336px;
+  height: 348px;
+  margin: 0 66px 51px 0;
+}
+.we_list li:nth-child(3n){
+  margin-right: 0;
+}
+.we_list li img{
+  width: 100%;
+  height: 100%;
+}
+.we_list li .text{
+  position: absolute;
+  left: 20px;top: 172px;
+  width: 296px;
+  text-align: left;
+}
+.we_list li .text h6{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 17px;
+}
+.we_list li .text p{
+  font-size: 14px;
+  color: #656565;
+  line-height: 28px;
+}
+/* 主要事项 */
+.matter{
+  text-align: center;
+  overflow: hidden;
+}
+.matter_title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin: 89px 0 74px;
+}
+.matter_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.matter_list li{
+  position: relative;
+  width: 260px;
+  height: 150px;
+  background: #F4F4F4;
+  border-radius: 20px;
+  margin-bottom: 82px;
+  margin-right: 53px;
+  transform: translateY(1000px);
+}
+.matter_list li:nth-child(4){
+  margin-right: 0;
+}
+.matter_list li span{
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background: #D80000;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.matter_list li p{
+  width:229px;
+  font-size: 14px;
+  line-height: 23px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #333333;
+  margin:49px auto 0;
+}
+.matter_list .l1{
+  transition: .35s .1s;
+}
+.matter_list .l2{  
+  transition: .35s .2s;
+}
+.matter_list .l3{
+  transition: .35s .3s;
+}
+.matter_list .l4{
+  transition: .35s .4s;
+}
+.matter_list .l5{
+  transition: .35s .5s;
+}
+.matter_list .l6{
+  transition: .35s .6s;
+}
+.matter_list .l7{
+  transition: .35s .7s;
+}

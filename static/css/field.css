@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* 栏目 */
+.column{
+  height: 174px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.column li{ 
+  float: left;
+  width: 120px;
+  height: 44px;
+  margin-right: 60px;
+  margin-top: 1.85rem;
+}
+.column li:nth-last-child(1){
+  margin-right: 0;
+}
+.column li:hover a{
+  color: #FFF;
+  background: #E10000;
+}
+.column li a{
+  float: left;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #E6E6E6;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333333;
+}
+.column li .active{ 
+  color: #FFF;
+  background: #E10000;
+}
+/* 标题 */
+.title{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+/* 管理 */
+.run{
+  width: 1200px;
+  min-width: 100%;
+  height: 394px;
+}
+.run_left{
+  width: 50%;
+  height: 100%;
+  background: #E10000;
+}
+.run_right{
+  width: 50%;
+  height: 100%;
+  background: #CF0707;
+}
+.run_right,.run_left{
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+.run_title{
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 54px;
+  padding-bottom: 32px;
+}
+.run_list li{
+  width: 50%;
+  float: left;
+  margin-top: 10px;
+}
+.run_list li:nth-child(odd){
+  width: 58%;
+}
+.run_list li:nth-child(even){
+  width: 42%;
+}
+.run_list span{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #E10000;
+  margin-right: 15px;
+}
+.run_list em{
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+/* 知道 */
+.know{
+  width: 100%;
+  height: 500px;
+  background: url(../images/field/bj-heit.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #FFF;
+  overflow: hidden;
+}
+.know p span{
+  font-size: 40px;
+  color: #E10000;
+}
+/* 重要 */
+.important{
+  position: relative;
+  height: 747px;
+}
+.important .img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 363px;
+  height: 332px;
+  margin-left: calc(-363px / 2);
+  margin-top: calc(-332px / 2);
+}
+.important img{
+  width: 100%;
+  height: 100%;
+}
+.important_conter{
+  position: absolute;
+  left: 50%;top: 50%;
+  margin-left: calc(-193px / 2);
+  margin-top: calc(-137px / 2);
+  width: 193px;
+  height: 137px;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+.important p{
+  position: absolute;
+  width: 143px;
+  height: 80px;
+  background: #EBEBEB;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  padding: 20px 14px;
+  box-sizing: border-box;
+}
+.important .p1{
+  left: 25px;
+  top: -94px;
+}
+.important .p2{
+  right: 25px;
+  top: -94px;
+}
+.important .p3{
+  left: -169px;
+  top: 50%;
+  margin-top: -40px;
+}
+.important .p4{
+  right: -169px;
+  top: 50%;
+  margin-top: -40px;
+}
+.important .p5{
+  left: 25px;
+  bottom: -94px;
+}
+.important .p6{
+  right: 25px;
+  bottom: -94px;
+}
+/* 我们做 */
+.did{
+  width: 100%;
+  height: 802px;
+  background: url(../images/field/hongs-bbc.png) no-repeat center center;
+  background-size: cover;text-align: center;
+  overflow: hidden;
+}
+.did_title{   
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 70px 0 39px;
+}
+.did_list li{
+  float: left;
+  width: 230px;
+  height: 280px;
+  margin-right: 12px;
+  margin-bottom: 15px;
+  transition: .35s linear;
+}
+.did_list li img,
+.did_list li p{
+  width: 100%;
+  height: 140px;
+}
+.did_list li p{ 
+  text-align: left;
+  font-size: 18px;
+  color: #333333;
+  background-color: #FFF;
+  padding: 15px 5% 0;
+  box-sizing: border-box;
+  line-height: 28px;
+}
+.did_list li:nth-child(5n){
+  margin-right: 0;
+}
+.did_list li:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.advantage{
+  text-align: center;
+}
+.advantage_title{
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin: 70px 0 39px;
+}
+.advantage_img{
+  position: relative;
+  float: left;
+  width: 284px;
+  height: 376px;
+  margin-right: 21px;
+}
+.advantage_img:nth-last-child(1){
+  margin-right: 0;
+}
+.advantage_img img{
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 100%;
+}
+.advantage_img .adva_text{
+  position: absolute;
+  left: 50%;top: 46px;
+  margin-left: -80px;
+  width: 160px;
+}
+.advantage_img h4{
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.advantage_img p{  
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 30px;
+}

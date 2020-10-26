@@ -18,7 +18,48 @@
 <body>
   <div class="main">
     <!-- 头部开始 -->
-    <iframe class="top" scrolling="no" src="../components/nav.html" frameborder="0"></iframe>
+    <div class="header pc_block phone_none">
+      <div class="width gWidth">
+        <h1 class="logo fl"><img src="../static/images/logo@2x.png" alt=""></h1>
+        <ul class="nav_list fr">
+          <li><a target="_parent" href="../pages/index.html">首页</a></li>
+          <li><a target="_parent" href="../pages/about.html">关于宇昊</a></li>
+          <li><a target="_parent" href="../pages/team.html">专业团队</a></li>
+          <li><a target="_parent" href="../pages/field.html">专业领域</a></li>
+          <li><a target="_parent" href="../pages/dynamic.html">宇昊动态</a></li>
+          <li><a class="active" target="_parent" href="../pages/recruit.html">招贤纳士</a></li>
+          <li><a target="_parent" href="../pages/contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header pc_none phone_block">
+      <div class="width gWidth">
+        <h1 class="logo fl"><img src="../static/images/logo@2x.png" alt=""></h1>
+      </div>
+    </div>
+    <div class="menu pc_none phone_block">
+      <span class="s1"></span>
+      <span class="s2"></span>
+      <span class="s3"></span>
+    </div>
+    <ul class="nav_list pc_none phone_block">
+      <li><a target="_parent" href="../pages/index.html">首页</a></li>
+      <li><a target="_parent" href="../pages/about.html">关于宇昊</a></li>
+      <li><a target="_parent" href="../pages/team.html">专业团队</a></li>
+      <li><a target="_parent" href="../pages/field.html">专业领域</a></li>
+      <li><a target="_parent" href="../pages/dynamic.html">宇昊动态</a></li>
+      <li><a target="_parent" href="../pages/recruit.html">招贤纳士</a></li>
+      <li><a target="_parent" href="../pages/contact.html">联系我们</a></li>
+    </ul>
+    <!-- banner图 -->
+    <div class="banner">
+      <img class="banner_img pc_block phone_none" src="../static/images/banner1.png" alt="">
+      <img class="banner_img  phone_block pc_none" src="../static/phoneImg/index/banner-1@2x.png" alt="">
+      <div class="icon pc_block phone_none">
+        <img class="icon_img" src="../static/images/xiahua-x@2x.png" alt="">
+        <p class="icon_text">下滑，更多内容</p>
+      </div>
+    </div>
     <!-- 加入我们 -->
     <div class="join gWidth">
       <div class="join_title">
@@ -100,7 +141,30 @@
       </ul>
     </div>
     <!-- 底部 -->
-    <iframe class="bottom" scrolling="no" src="../components/foot.html" frameborder="0"></iframe>
+    <div class="foot">
+      <div class="foot_top">
+        <div class="logo"><img src="../static/images/dib-logo@2x.png" alt=""></div>
+        <ul class="foot_nav gWidth clearfix">
+          <li><a target="_parent" href="../pages/about.html">关于宇昊</a></li>
+          <li><a target="_parent" href="../pages/team.html">专业团队</a></li>
+          <li><a target="_parent" href="../pages/field.html">专业领域</a></li>
+          <li><a target="_parent" href="../pages/dynamic.html">宇昊动态</a></li>
+          <li><a target="_parent" href="../pages/recruit.html">招贤纳士</a></li>
+          <li><a target="_parent" href="../pages/contact.html">联系我们</a></li>
+        </ul>
+        <div class="hot_link">
+          <a target="_blank" href="http://www.zllaw.net">友情链接： 中律法律</a>
+        </div>
+        <div class="code">
+          <img src="../static/images/erweima@2x.png" alt="">
+          <p class="pc_block phone_none">关注我们</p>
+        </div>
+      </div>
+      <div class="foot_bottom">
+        <p> COPYRIGHT@2016 ZLLAW.NET 中律法律服务事务所 ALL RIGHT RESERVED.
+          冀ICP备18023432号-1</p>
+      </div>
+    </div>
     <div class="top" id="gotoTop" style="width:60px;height:60px;background:rgba(0, 0, 0, .3);position: fixed;right: 0;bottom: 30%;
     font-size: 18px; color: #FFF; text-align: center; cursor: pointer;border-radius: 4px;z-index: 999;">
       <img style="width:30px;height:30px;margin-top: 5px;" src="../static/images/top.png" alt="">
@@ -108,6 +172,8 @@
     </div>
   </div>
   <script src="../common/js/jquery.min.js"></script>
+  <script src="../common/js/gotoTop.js"></script>
+  <script src="../common/js/menu.js"></script>
   <script>
     $(function () {
       var heigth = $('.box').height();
@@ -142,34 +208,7 @@
           }
         })
       }
-
     });
-    function gotoTop(minHeight) {
-
-      // 定义点击返回顶部图标后向上滚动的动画
-      $("#gotoTop").click(
-        function () {
-          $('html,body').animate({ scrollTop: '0px' }, 'slow');
-        })
-
-      // 获取页面的最小高度，无传入值则默认为600像素
-      minHeight ? minHeight = minHeight : minHeight = 600;
-
-      // 为窗口的scroll事件绑定处理函数
-      $(window).scroll(function () {
-
-        // 获取窗口的滚动条的垂直滚动距离
-        var s = $(window).scrollTop();
-
-        // 当窗口的滚动条的垂直距离大于页面的最小高度时，让返回顶部图标渐现，否则渐隐
-        if (s > minHeight) {
-          $("#gotoTop").fadeIn(500);
-        } else {
-          $("#gotoTop").fadeOut(500);
-        };
-      });
-    };
-    gotoTop();
   </script>
 </body>
 

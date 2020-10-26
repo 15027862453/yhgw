@@ -1,39 +1,4 @@
 @charset "utf-8";
-/* 栏目 */
-.column{
-  height: 174px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.column li{ 
-  float: left;
-  width: 120px;
-  height: 44px;
-  margin-right: 60px;
-  margin-top: 1.85rem;
-}
-.column li:nth-last-child(1){
-  margin-right: 0;
-}
-.column li:hover a{
-  color: #FFF;
-  background: #E10000;
-}
-.column li a{
-  float: left;
-  width: 120px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  background: #E6E6E6;
-  border-radius: 10px;
-  font-size: 16px;
-  color: #333333;
-}
-.column li .active{ 
-  color: #FFF;
-  background: #E10000;
-}
 /* 婚姻家事 */
 .marriage{
   text-align: center;
@@ -242,7 +207,7 @@
   font-weight: bold;
   color: #333333;
   padding: 68px 0 83px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ddd;
 }
 .process .wrap {
   position: absolute;top: 160px;
@@ -281,17 +246,17 @@
 }
 .process .w2{
   left: 27%;
-  transition: .35s 1s;
+  transition: .35s .6s;
 }
 .process .w3{
   left: 50%;
-  transition: .35s 2s;
+  transition: .35s 1.2s;
 }
 .process .w4{
   left: 73%;
-  transition: .35s 3s;
+  transition: .35s 1.8s;
 }
 .process .w5{
   left: 95%;
-  transition: .35s 4s;
+  transition: .35s 2.4s;
 }

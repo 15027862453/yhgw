@@ -1,39 +1,5 @@
 @charset "utf-8";
-/* 栏目 */
-.column{
-  height: 174px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.column li{ 
-  float: left;
-  width: 120px;
-  height: 44px;
-  margin-right: 60px;
-  margin-top: 1.85rem;
-}
-.column li:nth-last-child(1){
-  margin-right: 0;
-}
-.column li:hover a{
-  color: #FFF;
-  background: #E10000;
-}
-.column li a{
-  float: left;
-  width: 120px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  background: #E6E6E6;
-  border-radius: 10px;
-  font-size: 16px;
-  color: #333333;
-}
-.column li .active{ 
-  color: #FFF;
-  background: #E10000;
-}
+
 /* 民间借贷 */
 .loan{
   width: 100%;
@@ -71,6 +37,11 @@
   left: 0;top: 0;
   width: 100%;
   height: 100%;
+  transition: .35s linear;
+}
+.loan_list li:hover img{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .4);
 }
 .loan_list li .text{
   position: absolute;
@@ -210,64 +181,64 @@
   left: 0;bottom: -52px;
   width: 100%;
   height: 550px;
-}
-.process>img{
-  position: absolute;
-  left: 0;top: 0;
-  width: 100%;
-  height: 100%;
+  margin-bottom: 52px;
+  background: url(../images/field/bj3.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
 }
 .process_title{
-  position: absolute;
-  top: 88px;left: 50%;
-  width: 210px;
+  width: 100%;
+  text-align: center;
   font-size: 30px;
-  margin-left: -105px;
   color: #FFF;
   font-weight: bold;
-  z-index: 50;
+  margin: 96px 0 62px 0;
 }
-.process_list {
-  width: 1200px;
-  position: absolute;
-  top: 200px;left: 50%;
-  margin-left: -500px;
+.process_list{
+  display: flex;
+  justify-content: space-between;
+}
+.process_list .jt{
+  margin: 30px 55px 0 0;
 }
 .process_list .wrap{
   float: left;
-  width: 256px;
-  margin-right: 44px;
 }
-.process_list .wrap:nth-child(4){
-  margin-right: 0;
-}
-.process_list .wrap .top_img .jt{
-  width:45px;
-  height: 32px;
-}
-.process_list .wrap .icon{
-  float: left;
-  width:90px;
+.process_list .wrap_top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
   height: 90px;
   border-radius: 50%;
   background-color: #FFF;
-  text-align: center;
 }
-.process_list .wrap .font{
-  width: 50px;
-  height: 48px;
-  margin-top: 20px;
+.process_list .wrap_bottom{
+  color: #FFF;
 }
-.process_list .wrap .jt{
-  float: right;
-  margin-top: 29px;
-}
-.process_list .bottom_text h5{
+.process_list .wrap_bottom h5{
+  font-weight: normal;
   font-size: 20px;
-  color: #FFF;
-  line-height: 50px;
+  margin: 19px 0 10px 0;
 }
-.process_list .bottom_text p{
+.process_list .wrap_bottom p{
   font-size: 14px;
-  color: #FFF;
+}
+.process_list #dh2{
+  animation-delay: .5s;
+}
+.process_list #dh3{
+  animation-delay: 1s;
+}
+.process_list #dh4{
+  animation-delay: 1.5s;
+}
+.process_list #dh5{
+  animation-delay: 2s;
+}
+.process_list #dh6{
+  animation-delay: 2.5s;
+}
+.process_list #dh7{
+  animation-delay: 3s;
 }

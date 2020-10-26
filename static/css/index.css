@@ -469,9 +469,9 @@
 }
 .process_img img{
   position: absolute;
-  left: 52%;top: 50%;
-  margin-top: calc(-539px / 2);
-  margin-left: calc(-750px / 2);
+  left: 53%;top: 50%;
+  margin-top: calc(-270px);
+  margin-left: calc(-375px);
   width: 750px;
   height: 539px;
 }

@@ -1,0 +1,202 @@
+/* 标题 */
+.title{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* 交通事故 */
+.traffic{
+  width: 100%;
+  height: 463px;
+  background: url(../images/field/jtsg.png)no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 17px;
+}
+.traffic_title{
+  font-size: 30px;
+  line-height: 107px;
+}
+.traffic_img{
+  margin-left: 220px;
+  margin-right: 189px;
+}
+.traffic_img,.traffic_img img{
+  width: 188px;
+  height: 270px;
+}
+.traffic_text{
+  width: 480px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+/* 法律业务 */
+.business_title{
+  line-height: 110px;
+  color: #333;
+  margin-bottom: 19px;
+}
+.business_list{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  margin-bottom: 113px;
+}
+.business_list li{
+  float: left;
+  width: 100px;
+  margin-top: -19px;
+}
+.business_list .num{
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  background-color: #D83F2A;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.business_list p{
+  width: 100px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 18px;
+}
+.dh2{
+  animation-delay: .5s;
+}
+.dh3{
+  animation-delay: 1s;
+}
+.dh4{
+  animation-delay: 1.5s;
+}
+.dh5{
+  animation-delay: 2s;
+}
+.dh6{
+  animation-delay: 2.5s;
+}
+.dh7{
+  animation-delay: 3s;
+}
+/* 做什么 */
+.work_title{
+  color: #333;
+  line-height: 110px;
+}
+.work_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.work_list li{
+  position: relative;
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 44px;
+  margin-bottom: 53px;
+}
+.work_list li:nth-child(1){
+  margin-left: 167px;
+}
+.work_list li:nth-child(5){
+  margin-right: 167px;
+}
+.work_list li:nth-child(6){
+  margin-left: 40px;
+}
+.work_list li img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: .6s linear;
+}
+.work_list li p{
+  position: absolute;
+  left: 0;top: 0;
+  z-index: 9;
+  width: 138px;
+  height: 138px;
+  line-height: 138px;
+  border-radius: 50%;
+  text-align: center;
+}
+.work_list li:hover img{
+  transform: rotate(360deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+/* 我们的优势 */
+.advantage{
+  height: 638px;
+  background-color: #F1F1F1;
+  padding-top: 28px;
+  box-sizing: border-box;
+}
+.advantage .gWidth{
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.advantage_title{
+  line-height: 110px;
+}
+.advantageList1{
+  float: left;
+}
+.advantageList2{
+  float: right;
+}
+.advantage_list li{
+  position: relative;
+  width: 520px;
+  height: 100px;
+  margin-bottom: 54px;
+  background-color: #FFF;
+}
+.advantage_list li h6{
+  float: left;
+  width: 150px;
+  height: 100px;
+  line-height: 100px;
+  text-align: left;
+  padding-left:52px ;
+  font-weight: normal;
+  color: #FFF;
+  background-color: #D13D29;
+  box-sizing: border-box;
+  transition: .35s linear;
+}
+.advantage_list li p{
+  position: absolute;
+  left: 187px;top: 0;
+  float: left;
+  width: 370px;
+  height: 100px;
+  line-height: 28px;
+  padding: 26px 100px 26px 37px;
+  font-size: 16px;
+  color: #333;
+  box-sizing: border-box;
+  transition: .35s linear;
+}
+.advantage_list li:hover h6{
+  width: 100%;
+}
+.advantage_list li:hover p{
+  color: #FFF;
+}

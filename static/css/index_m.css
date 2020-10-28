@@ -252,23 +252,21 @@
   margin-bottom: 1.5rem;
 }
 .field_list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   padding:0 5%;
   box-sizing: border-box;
 }
 .field_list li{
   position: relative;
+  float: left;
   height: 11.6rem;
   width: 6.9rem;
-  margin-right: 0.587rem !important;
+  /* margin-right: 0.587rem !important; */
   overflow: hidden;
   margin-bottom: 0.775rem;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.2);
 }
 .field_list li:nth-child(2n){
-  margin-right: 0 !important;
+  float: right;
 }
 .field_list li .list_top img{
   width: 100%;

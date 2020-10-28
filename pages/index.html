@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="main" id="vue">
     <!-- 头部开始 -->
     <div class="header pc_block phone_none">
       <div class="width gWidth">
@@ -622,14 +622,16 @@
   <script src="../common/js/num.js"></script>
   <script src="../common/js/gotoTop.js"></script>
   <script src="../common/js/menu.js"></script>
+  <script src="../common/js/vue.js"></script>
   <script>
     $(function () {
+      var index = 0;
       $(window).scroll(function () {
         var s = $(window).scrollTop();
         var height = $('.team').offset().top - $('.team').height() / 2;
         if (s > height) {
           $("#dataNums1").rollNum({
-            deVal: 30
+            deVal: 30,
           });
           $("#dataNums2").rollNum({
             deVal: 12399
@@ -640,6 +642,17 @@
         }
       });
     });
+    var vm = new Vue({
+      el:'#vue',
+      mounted () {
+        this.dataVal();
+      },
+      methods: {
+        dataVal(){
+          console.log(window.index);
+        }
+      }
+    })
     var mySwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
       loop: true, // 循环模式选项

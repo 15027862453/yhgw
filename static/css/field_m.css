@@ -124,9 +124,10 @@
 }
 .important_conter{
   position: absolute;
-  left: 50%;top: 5.6rem;
+  left: 50%;
+  top: 5.7rem;
   transform: translate(-50%);
-  width: 4.125rem;
+  width: 4.9rem;
   color: #FFF;
   line-height: 0.55rem;
   font-size: 0.35rem;

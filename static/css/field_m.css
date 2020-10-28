@@ -72,9 +72,6 @@
 .know .p3{font-size: 1rem;margin-top: 0.95rem;}
 .know .p4{font-size: 1.65rem;margin-left: 0.5rem;margin-top: 0.95rem;}
 /* 重要性 */
-.important{
-  position: relative;
-}
 .important_title{
   width: 100%;
   text-align: center;
@@ -82,13 +79,15 @@
   font-weight: bold;
   margin: 1.3rem 0 3.05rem;
 }
-.important .img {
+.important .img{
   position: relative;
   width: 7.75rem;
   height: 7.1rem;
   margin: 2rem auto 3.375rem;
 }
 .important .img img{
+  position: absolute;
+  left: 0;top: 0;
   width: 7.75rem;
   height: 7.1rem;
 }
@@ -125,8 +124,8 @@
 .important_conter{
   position: absolute;
   left: 50%;
-  top: 5.7rem;
-  transform: translate(-50%);
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   width: 4.9rem;
   color: #FFF;
   line-height: 0.55rem;

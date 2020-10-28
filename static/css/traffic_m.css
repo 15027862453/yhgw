@@ -1,0 +1,145 @@
+.traffic{
+  height: 16.1rem;
+  background: url(../phoneImg/jtsg.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.traffic_title{
+  font-size: 0.85rem;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.925rem 0 1.6rem;
+}
+.traffic_img{
+  float: none;
+  width:4.025rem;
+  height: 5.75rem;
+  margin: 0 auto 0.825rem;
+}
+.traffic_img img{
+  width: 100%;height: 100%;
+}
+.traffic_text p{
+  font-size: 0.55rem;
+  color: #FFF;
+  line-height: 1rem;
+  padding: 0 0.65rem;
+  box-sizing: border-box;
+}
+/* 法律业务 */
+.business{
+  padding: 0 0.65rem;
+  box-sizing: border-box;
+}
+.business_title{
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin: 1.45rem 0 0.825rem;
+}
+.business_list li{
+  float: left;
+  width: 3.75rem;
+  height: 4.625rem;
+  margin-right: 1.7rem;
+}
+.business_list li:nth-child(3n){
+  margin-right: 0;
+}
+.business_list li .num{
+  width: 1.075rem;
+  height: 1.075rem;
+  line-height: 1.075rem;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #D83F2A;
+  font-size: 0.65rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.business_list li p{
+  font-size: 0.45rem;
+  color: #333333;
+  line-height: 0.825rem;
+  margin-top: 0.125rem;
+}
+/* 我们能为您做什么 */
+.work_title{
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.work_list{
+  padding: 0 0.65rem;
+  box-sizing: border-box;
+  margin-bottom: 0.75rem;
+}
+.work_list li{
+  position: relative;
+  float: left;  
+  width: 3.95rem;
+  height: 3.95rem;
+  border-radius: 50%;
+  margin-right: 1.425rem;
+  margin-bottom: 0.425rem;
+}
+.work_list li:nth-child(3n){
+  margin-right: 0;
+}
+.work_list li img{
+  width: 100%;
+  height: 100%;
+}
+.work_list li p{
+  position: absolute;
+  left: 0;top: 0;
+  width: 100%;
+  height: 3.95rem;
+  line-height:3.95rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.55rem;
+  font-weight: 700;
+}
+/* 我们的优势 */
+.advantage{
+  background-color: #F1F1F1;
+  padding: 0 0.65rem 1rem;
+  box-sizing: border-box;
+}
+.advantage_title{
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  margin:1.5rem 0 0.825rem;
+}
+.advantage_list li{
+  height: 2.15rem;
+  margin-bottom: 0.4rem;
+}
+.advantage_list h6{
+  float: left;
+  width: 3.2rem;
+  height: 2.15rem;
+  line-height: 2.15rem;
+  text-align: center;
+  color: #FFF;
+  font-size: 0.75rem;
+  background-color: #D13C28;
+}
+.advantage_list p{
+  float: left;
+  width:11.5rem;
+  height: 2.15rem;
+  font-size: 0.5rem;
+  line-height: 0.95rem;
+  background-color: #FFF;
+  padding: 0.2rem 0.4rem 0 0.75rem;
+  box-sizing: border-box;
+}

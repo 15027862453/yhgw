@@ -8,36 +8,48 @@
 .gWidth{
   width: auto !important;
 }
+body{
+  overflow-x: hidden;
+}
 /* 栏目 */
+.column_title{
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.85rem;
+}
 .column{
   display: flex;
   justify-content: space-between;
-  height: 3.3rem;
-  margin:0.8rem  0.75rem 0;
+  height:2.75rem;
+  margin:0.65rem  0.75rem 0;
   overflow-x: scroll;
   box-sizing: border-box;
 }
 .column::-webkit-scrollbar {display:none}
 .column li{ 
   float: left;
-  width: 3.8rem;
-  height: 1.8rem;
-  margin-right: .7rem;
+  width: 3.2rem;
+  height: 1.4rem;
+  margin-right: 1rem;
 }
 .column li a{
   float: left;
-  width:3.8rem;
-  height: 1.8rem;
-  line-height: 1.8rem;
+  width: 3.2rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
   text-align: center;
   background: #E6E6E6;
   border-radius: 0.25rem;
-  font-size:0.65rem;
+  font-size:0.55rem;
   color: #333333;
 }
 .column li .active{ 
   color: #FFF;
   background: #E10000;
+  font-weight: bold;
 }
 /* 头部 */
 .header{
@@ -124,6 +136,9 @@
   margin: 1rem 0;
   font-size: 0.55rem;
   color: #FFFFFF;
+}
+.foot_nav li{
+  float: left;
 }
 .foot_nav li a{
   float: left;

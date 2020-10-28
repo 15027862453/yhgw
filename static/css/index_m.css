@@ -254,6 +254,7 @@
 .field_list{
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   padding:0 5%;
   box-sizing: border-box;
 }

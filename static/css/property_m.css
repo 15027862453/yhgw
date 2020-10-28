@@ -186,6 +186,10 @@
   right: 4.75rem;top:2.8rem;
   transform:rotate(180deg) !important;
 }
+.process_list .p3{
+  position: absolute;
+  right: 0.55rem;bottom: 2.8rem;
+}
 .process_list .p4{
   position: absolute;
   right: 0.55rem;bottom: 0;

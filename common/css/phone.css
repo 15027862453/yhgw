@@ -8,7 +8,7 @@
 .gWidth{
   width: auto !important;
 }
-body{
+.main{
   overflow-x: hidden;
 }
 /* 栏目 */

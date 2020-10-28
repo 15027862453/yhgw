@@ -8,9 +8,7 @@
 .gWidth{
   width: auto !important;
 }
-.main{
-  overflow-x: hidden;
-}
+
 /* 栏目 */
 .column_title{
   width: 100%;

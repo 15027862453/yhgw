@@ -1,4 +1,3 @@
-
 .marriage_title{
   width: 100%;
   text-align: center;
@@ -145,7 +144,7 @@
   color: #333;
   font-size: 0.85rem;
   font-weight: bold;
-  margin:0 0.825rem 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .we_list{
   padding: 0 0.55rem;
@@ -198,14 +197,13 @@
   color: #333;
   font-size: 0.85rem;
   font-weight: bold;
-  margin:1rem 0.825rem 0.75rem;
+  margin:1rem 0  0.75rem;
 }
 .process .wrap{
   position: absolute;
   width: 5.8rem;
   text-align: center;
 }
-
 .process .w1{
   top: 3.15rem;
   left:1rem;

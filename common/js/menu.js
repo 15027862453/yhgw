@@ -8,6 +8,7 @@ $(function () {
       $('.s2').css('transform', 'rotateZ(-45deg) translateX(-0.02rem)');
       $('.s3').css('opacity', '0');
       $('.menu span').css('background', '#000');
+      $('body').css('overflow', 'hidden');
     } else {
        isShow = true;
       $('.nav_list').css('transform', 'translateX(200vw)');
@@ -15,6 +16,7 @@ $(function () {
       $('.s2').css('transform', 'rotateZ(0) translateX(0)');
       $('.s3').css('opacity', '1');
       $('.menu span').css('background', '#FFF');
+      $('body').css('overflow', 'auto');
     }
   });
 });

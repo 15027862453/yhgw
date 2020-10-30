@@ -1,69 +1,4 @@
 @charset "utf-8";
-/* 头部 */
-.header{
-  position: absolute;
-  left: 0;top: 0;
-  z-index: 999;
-  width: 100%;
-  height: 90px;
-  line-height:90px;
-  border-bottom: 1px solid  rgba(255, 255, 255, .2);
-}
-.header .logo{
-  width: 364px;
-  height: 50px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-.header .logo img{
-  width: 100%;
-  height: 100%;
-}
-.header .nav_list li{
-  float: left;
-  text-align: center;
-  user-select: none;
-}
-.header .nav_list li a{
-  display: inline-block;
-  height: 65px;
-  font-size:16px;
-  color: #FFF;
-  margin-left: 45px;
-}
-.header .nav_list li a:hover{
-  border-bottom: 2px solid #fff;
-}
-
-/* banner图 */
-.banner{
-  position: relative;
-  left: 0;top: 0;
-  width: 3000px;
-  min-width: 992px;
-  max-width: 100%;
-  height: 803px;
-  margin: 0 auto;
-}
-.banner .banner_img{
-  width:100%;
-  height:100%;
-}
-.icon{
-  position: absolute;
-  left: 0;bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-.icon .icon_img{
-  width: 26px;
-  height: 36px;
-}
-.icon .icon_text{
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 30px;
-}
 /* 小图标 */
 .sign{
   width: 24px;
@@ -534,8 +469,8 @@
 .partner_bottom .par_bot_left img,
 .partner_bottom .par_bot_middle img,
 .partner_bottom .par_bot_right img{
-  width: 94px;
-  height: 39px;
+  width: 130px;
+  height: 75px;
 }
 .partner_bottom .par_bot_middle h2{
   margin-bottom: 18px;

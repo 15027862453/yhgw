@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../static/css/contact_m.css" type="text/css" media="(max-width:750px)">
   <link rel="stylesheet" href="../common/css/phone.css" type="text/css" media="(max-width:750px)">
   <link rel="stylesheet" href="../common/css/pc.css" type="text/css" media="(min-width:751px)">
-  <link rel="stylesheet" href="../static/css/contact.css" type="text/css" media="(min-width:750px)">
+  <link rel="stylesheet" href="../static/css/contact.css" type="text/css" media="(min-width:751px)">
   <title>联系我们</title>
   <script src="../static/js/common.js"></script>
 </head>
@@ -19,16 +19,16 @@
   <div class="main">
     <!-- 头部开始 -->
     <div class="header pc_block phone_none">
-      <div class="width gWidth">
+      <div class="width gWidth clearfix">
         <h1 class="logo fl"><img src="../static/images/logo@2x.png" alt=""></h1>
         <ul class="nav_list fr">
-          <li><a target="_parent" href="../pages/index.html">首页</a></li>
-          <li><a target="_parent" href="../pages/about.html">关于宇昊</a></li>
-          <li><a target="_parent" href="../pages/team.html">专业团队</a></li>
-          <li><a target="_parent" href="../pages/field.html">专业领域</a></li>
-          <li><a target="_parent" href="../pages/dynamic.html">宇昊动态</a></li>
-          <li><a target="_parent" href="../pages/recruit.html">招贤纳士</a></li>
-          <li><a class="active" target="_parent" href="../pages/contact.html">联系我们</a></li>
+          <li><a href="../pages/index.html">首页</a></li>
+          <li><a href="../pages/about.html">关于宇昊</a></li>
+          <li><a href="../pages/team.html">专业团队</a></li>
+          <li><a href="../pages/field.html">专业领域</a></li>
+          <li><a href="../pages/dynamic.html">宇昊动态</a></li>
+          <li><a href="../pages/recruit.html">招贤纳士</a></li>
+          <li><a class="active" href="../pages/contact.html">联系我们</a></li>
         </ul>
       </div>
     </div>
@@ -124,42 +124,6 @@
   <script src="../common/js/jquery.min.js"></script>
   <script src="../common/js/gotoTop.js"></script>
   <script src="../common/js/menu.js"></script>
-  <script>
-    window.onLoad = function () {
-      var lnglat = new AMap.LngLat(115.540874, 38.889697);
-
-      var map = new AMap.Map("container", {
-        resizeEnable: true,
-        center: lnglat,
-        zoom: 17
-      });
-      addMarker();
-      //添加marker标记
-      function addMarker() {
-        map.clearMap();
-        var marker = new AMap.Marker({
-          map: map,
-          position: lnglat
-        });
-      }
-
-      var infoWindowContent =
-        '<p class="position">河北宇昊律师事务所</p>';
-      // 创建一个自定义内容的 infowindow 实例
-      var infoWindow = new AMap.InfoWindow({
-        position: lnglat,
-        offset: new AMap.Pixel(0, -35),
-        content: infoWindowContent
-      });
-
-      infoWindow.open(map);
-    }
-    var url = 'https://webapi.amap.com/maps?v=1.4.15&key=04d9b957d257498d504ee326407500f5&callback=onLoad';
-    var jsapi = document.createElement('script');
-    jsapi.charset = 'utf-8';
-    jsapi.src = url;
-    document.head.appendChild(jsapi);
-  </script>
+  <script src="../static/js/map.js"></script>
 </body>
-
 </html>
